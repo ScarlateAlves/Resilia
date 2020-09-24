@@ -1,0 +1,97 @@
+body {
+    background: rgba(0, 0, 0, 0.918);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 248, 220, 0.829);
+}
+
+
+/*Cabecalho*/
+
+.container {
+    background: black;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.lista {
+    padding-left: 10px;
+    font-size: 15px;
+    margin-left: 9px;
+    /*tirar sublinhado*/
+    text-decoration: none;
+    color: rgba(255, 248, 220, 0.829);
+}
+
+div.caixaDePesquisa {
+    display: flex;
+    border-radius: 10px;
+}
+
+.pesquisa {
+    background: rgba(255, 255, 255, 0.925);
+    border: 1px solid rgba(255, 248, 220, 0.13);
+}
+
+button.pesquisa {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input.pesquisa {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+}
+
+
+/*corpo*/
+
+div.filmeLista h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.filmeLista {
+    width: 60%;
+    margin: auto;
+}
+
+img.filme {
+    padding: 2px;
+    width: 150px;
+    height: 200px;
+}
+
+
+/*rodape*/
+
+footer {
+    margin-top: 30px;
+    background: black;
+}
+
+div.rodape {
+    width: 35%;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+div.rodape p {
+    padding-bottom: 10px;
+}
+
+.icone {
+    width: 20px;
+}
