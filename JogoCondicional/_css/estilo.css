@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+body {
+    color: rgb(9, 1, 27);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url("../_img/nave.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid#cbedf018;
+    border-radius: 20px;
+    width: 700px;
+    margin: auto;
+    background: #cbedf0d5;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    color: #0f3057;
+}
+
+#h2-subti {
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+}
+
+.div-campus {
+    font-size: 20px;
+}
+
+.campus {
+    display: inline-block;
+}
+
+button {
+    border: 1px solid #00587a;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background: #00587a;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.div-imagem {
+    width: 200px;
+    height: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+img.img-gif {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+footer div {
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+footer p {
+    font-size: 10px;
+}

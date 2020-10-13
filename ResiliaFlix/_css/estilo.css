@@ -1,0 +1,169 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    body {
+        background: rgba(0, 0, 0, 0.904);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgba(255, 248, 220, 0.829);
+    }
+    /*------Cabecalho--------*/
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    
+    div.containerCabecalho {
+        background: black;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    h1 a.titulo_principal {
+        text-decoration: none;
+        color: rgba(230, 230, 23, 0.959);
+        font-size: 40px;
+        font-family: 'Bangers', cursive;
+    }
+    
+    a.listaMenu {
+        padding-left: 10px;
+        font-size: 15px;
+        margin-left: 9px;
+        /*tirar sublinhado*/
+        text-decoration: none;
+        color: rgba(255, 248, 220, 0.829);
+    }
+    
+    a.listaMenu:hover {
+        color: rgba(230, 230, 23, 0.959);
+    }
+    
+    div.caixaDePesquisa {
+        display: flex;
+        border-radius: 10px;
+    }
+    
+    .pesquisa {
+        background: rgba(255, 255, 255, 0.925);
+        border: 1px solid rgba(255, 248, 220, 0.13);
+    }
+    
+    button.pesquisa {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    input.pesquisa {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding-left: 10px;
+    }
+    /*--------------------Corpo-----------------*/
+    
+    section {
+        padding-top: 11%;
+    }
+    
+    section h2 {
+        padding-left: 5%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .corpo_principal_div {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5%;
+        border-radius: 6px;
+    }
+    
+    .filmes_img {
+        margin-right: 1.5%;
+        margin-bottom: 1.5%;
+        width: 15.4%;
+        height: 10%;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+    /*grid tira o espacamento*/
+    
+    .filmes_img:nth-child(6n) {
+        margin-right: 0%;
+    }
+    /*--------------Rodape--------------------*/
+    
+    footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.034);
+    }
+    
+    div.rodape {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        padding: 50px;
+    }
+    
+    div.rodape p {
+        color: #B5B5B5;
+        font-size: 11px;
+    }
+    
+    .icone {
+        padding-right: 10px;
+    }
+    /*--------------Configuracao mobile--------------*/
+    
+    @media (max-width: 767px) {
+        /**cabecalho*/
+        header {
+            position: static;
+        }
+        div.containerCabecalho {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            text-align: center;
+        }
+        .conteinerCabecalho_Nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .listaMenu {
+            padding: 5px;
+            margin: 2%;
+            border-bottom: 1px solid rgba(248, 246, 246, 0.178);
+        }
+        div.caixaDePesquisa {
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+        }
+        /*corpo*/
+        .corpo_principal_div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .filmes_img {
+            box-sizing: initial;
+            width: 32.3%;
+        }
+        .filmes_img:nth-child(3n) {
+            margin-right: 0%;
+        }
+        /*rodape*/
+        div.rodape {
+            display: flex;
+            flex-direction: column;
+        }
+        div.rodape p {
+            padding-bottom: 3%;
+        }
+    }
