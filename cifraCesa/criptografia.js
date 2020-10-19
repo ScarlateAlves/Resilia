@@ -1,5 +1,5 @@
-var nome = "RRRR";
-var deslocamento = 1
+var nome = "ZU";
+var deslocamento = 1;
 
 function cifraComCifraDeCesar(deslocamento, nome) {
     var msg = []
@@ -34,8 +34,8 @@ function decifraCifraDeCesar(deslocamento, nome) {
     return criptograf.join("")
 }
 
-var cifra = cifraComCifraDeCesar(1, nome)
-var descifra = decifraCifraDeCesar(1, cifra)
+var cifra = cifraComCifraDeCesar(deslocamento, nome)
+var descifra = decifraCifraDeCesar(deslocamento, cifra)
 
 console.log(cifra)
 console.log(descifra)
