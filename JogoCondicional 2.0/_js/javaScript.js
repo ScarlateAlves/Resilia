@@ -1,68 +1,69 @@
-var botaoSim = document.getElementById('botaoSim');
-var botaoNao = document.getElementById('botaoNao');
-var h2 = document.querySelector('h2');
+var h2 = document.getElementById('h2')
 var res = document.getElementById('res');
-var p = document.querySelector('p');
+var p = document.getElementById('p')
+var resposta1 = document.getElementById('resposta1');
+var resposta2 = document.getElementById('resposta2');
+var resposta3 = document.getElementById('resposta3');
+var resposta4 = document.getElementById('resposta4');
 
-var pontos = parseInt(pontos)
+resposta1.onclick = errada;
+resposta2.onclick = errada;
+resposta3.onclick = pergunta2;
+resposta4.onclick = errada;
 
-function sim() {
-    h2.innerHTML = "Parabéns, vamos começar";
-
-    p.innerHTML = "Qual a capital do Mato Grosso?"
-    botaoSim.innerText = "Cuiabá"
-    botaoNao.innerText = "João Pessoa"
-
-    botaoSim.onclick = pergunta1Sim;
-    botaoNao.onclick = pergunta1Nao;
+function pergunta2() {
+    conteudo(h2, "QUAL FOI O ANO DE DEBUT?", resposta1, resposta2, resposta3, resposta4, "2012", "2013", "2014", "2015", pergunta2)
+    resposta1.onclick = errada;
+    resposta2.onclick = pergunta3;
+    resposta3.onclick = errada
+    resposta4.onclick = errada;
 }
 
-
-function pergunta1Sim() {
-    pontos + 1
-    h2.innerHTML = `Você acertou ganhou ${pontos} pontos`;
-
-    p.innerHTML = "Qual o país com maior população?"
-    botaoSim.innerText = "India"
-    botaoNao.innerText = "China"
-
-    botaoSim.onclick = pergunta2Sim;
-    botaoNao.onclick = pergunta2Nao;
-
+function pergunta3() {
+    conteudo(h2, `QUAL INTEGRANTE TEM COMO PELUCIA? <br> <img src="_img/pelucia.jpg" alt="">`, resposta1, resposta2, resposta3, resposta4, "RM", "JIN", "JIMIM", "V")
+    resposta1.onclick = errada;
+    resposta2.onclick = errada;
+    resposta3.onclick = pergunta4;
+    resposta4.onclick = errada;
 }
 
-function pergunta1Nao() {
-    nao();
+function pergunta4() {
+    conteudo(h2, "QUAL A IDADE DO MEMBRO MAIS NOVO?", resposta1, resposta2, resposta3, resposta4, "22", "23", "24", "25")
+
+    resposta1.onclick = errada;
+    resposta2.onclick = errada;
+    resposta3.onclick = pergunta5;
+    resposta4.onclick = errada;
 }
 
-function pergunta2Sim() {
-    nao()
+function pergunta5() {
+    conteudo(h2, "QUAL DOS INTEGRANTES CONSEGUE FAZER DE TUDO?",
+        resposta1, resposta2, resposta3, resposta4,
+        `<img src="_img/HOUPE.webp" alt="">`,
+        `<img src="_img/SUGA.webp" alt="">`,
+        `<img src="_img/KOOK.webp" alt="">`,
+        `<img src="_img/JIN.webp" alt="">`)
+    resposta1.onclick = errada
+    resposta2.onclick = errada
+    resposta3.onclick = certa;
+    resposta4.onclick = errada
+}
+//funcoes separadas
+
+function errada() {
+    h2.innerHTML = "Você perdeu!!!"
+    res.innerHTML = `<img src="_img/KOOKCHORA.gif" alt="">  <br>  <button onclick="document.location.reload(true)">Jogar de novo</button>`;
 }
 
-function pergunta2Nao() {
-    pontos + 1
-    h2.innerHTML = `Você acertou ganhou ${pontos} pontos`;
-
-    p.innerHTML = "Onde fica a Russia?"
-    botaoSim.innerText = "Africa"
-    botaoNao.innerText = "Asia"
-
-    botaoSim.onclick = pergunta3Sim;
-    botaoNao.onclick = pergunta3Nao;
-
+function certa() {
+    h2.innerHTML = "Você ganhou!!!!!!!!!!!!!!"
+    res.innerHTML = `<img src="_img/MENINOSCORACAO.gif" alt=""> <br>  <button onclick="document.location.reload(true)">Jogar de novo</button>`
 }
 
-function pergunta3Sim() {
-    nao()
-
-}
-
-function pergunta3Nao() {
-    res.innerText = "Parabens acertou todas"
-}
-
-
-function nao() {
-    h2.innerHTML = `O garibaldo te matou`
-    res.innerHTML = `<img src="_img/morte.gif" alt="">`
+function conteudo(h2, cont, resposta1, resposta2, resposta3, resposta4, botao1, botao2, botao3, botao4) {
+    h2.innerHTML = cont;
+    resposta1.innerHTML = botao1
+    resposta2.innerHTML = botao2
+    resposta3.innerHTML = botao3
+    resposta4.innerHTML = botao4
 }

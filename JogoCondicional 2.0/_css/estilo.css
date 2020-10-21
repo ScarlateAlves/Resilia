@@ -1,0 +1,11 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#interface {
+    width: 60%;
+    margin: auto;
+    background: rebeccapurple;
+    text-align: center;
+}

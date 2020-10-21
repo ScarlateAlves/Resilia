@@ -1,6 +1,5 @@
-var nome = prompt("Digite seu nome")
 var escreveNome = document.getElementById("h2-subti")
-escreveNome.innerHTML = ` <h2 id="h2-subti">${nome} esta no mundo Coronga</h2>`
+escreveNome.innerHTML = ` <h2 id="h2-subti">Você esta no mundo Coronga</h2>`
 
 function clicar() {
     var condicao = document.getElementsByName('condicao');
