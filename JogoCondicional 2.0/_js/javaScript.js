@@ -39,10 +39,10 @@ function pergunta4() {
 function pergunta5() {
     conteudo(h2, "QUAL DOS INTEGRANTES CONSEGUE FAZER DE TUDO?",
         resposta1, resposta2, resposta3, resposta4,
-        `<img src="_img/HOUPE.webp" alt="">`,
-        `<img src="_img/SUGA.webp" alt="">`,
-        `<img src="_img/KOOK.webp" alt="">`,
-        `<img src="_img/JIN.webp" alt="">`)
+        `<img src="_img/HOUPE.webp" class="imagem">`,
+        `<img src="_img/SUGA.webp" class="imagem">`,
+        `<img src="_img/KOOK.webp"  class="imagem">`,
+        `<img src="_img/JIN.webp"  class="imagem">`)
     resposta1.onclick = errada
     resposta2.onclick = errada
     resposta3.onclick = certa;

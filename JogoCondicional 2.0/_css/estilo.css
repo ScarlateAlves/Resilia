@@ -1,11 +1,51 @@
+body {
+    background: url(../_img/pp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 img {
-    width: 200px;
-    height: 200px;
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
 }
 
 #interface {
-    width: 60%;
+    width: 70%;
     margin: auto;
-    background: rebeccapurple;
+    background: rgba(255, 255, 255, 0.61);
     text-align: center;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    color: white;
+    background: rgba(0, 0, 0, 0.849);
+    border-radius: 5px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+@media (max-width: 960px) {
+    body {
+        height: 100%;
+        background: url(../_img/celular.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    button {
+        width: 80px;
+        height: 40px;
+    }
 }
